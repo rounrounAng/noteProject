@@ -1,0 +1,25 @@
+<html>
+
+<body>
+  <div class="app-container">
+    <div class="sidenav">
+      <app-sidenav (menutitle)="changeMenu($event)"></app-sidenav>
+    </div>
+
+
+
+    <div class="right-body">
+      <div class="n-header">
+        <mat-icon [svgIcon]="headerIcon"></mat-icon>
+        <span>{{headerTitle}}</span>
+      </div>
+      <div class="right-container">
+        <router-outlet></router-outlet>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+<div class="note-add">
+  <mat-icon class="add-icon" svgIcon="add" routerLink="/newnote/create">
+  </mat-icon>
+</div>
+<ng-container *ngFor="let note of noteData">
+  <app-note-item [note]="note"></app-note-item>
+</ng-container>
+
+
+<mat-paginator [length]="noteData.length" [pageSize]="10" [pageSizeOptions]="[10, 20, 50]">
+</mat-paginator>

@@ -1,0 +1,71 @@
+::ng-deep html {
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+::ng-deep -webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+::ng-deep body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+
+  .sidenav {
+    width: 60px;
+    background: #F2F2F2;
+    box-shadow: 0 1px 6px #ccc;
+    margin-right: 2px;
+  }
+
+  ;
+
+  .right-body {
+    width: 100%;
+    background: #e7edf1;
+    //box-shadow: -1px 1px 3px #ccc;
+
+    .n-header {
+      height: 50px;
+      background: #F2F2F2;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0 20px;
+
+      ::ng-deep mat-icon {
+        margin: 0 10px 0 0;
+
+      }
+
+    }
+
+    .right-container {
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      height: calc(100%);
+
+      ::ng-deep app-newnote {
+        height: calc(100% - 50px);
+
+      }
+
+
+    }
+  }
+}

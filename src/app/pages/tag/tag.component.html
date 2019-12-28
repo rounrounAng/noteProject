@@ -1,0 +1,14 @@
+<div class="tag">
+  <button mat-raised-button color="primary" (click)="openInput()">新建标签</button>
+  <div class="tag-content">
+    <mat-chip-list #chipList class="mat-chip-list-stacked">
+      <mat-chip *ngFor="let tag of tags" [removable]="isRemovable" (remove)="removeTag(tag)">
+        {{tag}}
+        <mat-icon matChipRemove *ngIf="isRemovable">cancel</mat-icon>
+      </mat-chip>
+
+    </mat-chip-list>
+
+  </div>
+
+</div>

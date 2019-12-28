@@ -1,0 +1,73 @@
+.n-sidenav {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  height: 100vh;
+
+
+  .my-icon {
+    height: 245px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .personicon {
+      height: 60px;
+      width: 60px;
+    }
+
+    p {
+      color: #ffffff;
+    }
+  }
+
+
+
+  .s-menu {
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 65px;
+    margin: 0;
+    box-shadow: 1px 1px 6px #ccc;
+
+    .menu-list {
+      list-style: none;
+      width: 100%;
+      margin: 0;
+      padding: 20px 0px 0 0;
+
+      .s-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        font-size: 16px;
+        color: #fff;
+
+        &:focus {
+          outline: none;
+          outline-color: #13227a;
+          outline-width: 0;
+        }
+
+        mat-icon {
+          height: 30px;
+          width: 30px;
+        }
+
+        span {
+          height: 30px;
+          line-height: 30px;
+          color: #ffffff;
+
+        }
+      }
+    }
+
+
+  }
+}

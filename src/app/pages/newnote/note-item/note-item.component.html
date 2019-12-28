@@ -1,0 +1,20 @@
+<div class="note-item">
+  <div class="s-cover" (mouseenter)="setShow()" (mouseleave)="resetShow()">
+    <img src="../../../assets/images/America.jpg" />
+    <div class="previewicon" *ngIf="showIcon">
+      <ng-container class="preview-item" *ngFor="let icon of notePreicon">
+        <mat-icon [matTooltip]="icon.text" matTooltipPosition="above" [svgIcon]="icon.icon" [routerLink]="icon.route">
+        </mat-icon>
+      </ng-container>
+    </div>
+  </div>
+
+  <div class="note-text">
+    <div class="note-qrcode">
+      <span>{{note.title}}</span>
+      <mat-icon svgIcon="note-qrcode"></mat-icon>
+    </div>
+    <span>{{note.createTime}}</span>
+  </div>
+
+</div>

@@ -1,0 +1,13 @@
+<div class="n-sidenav">
+  <div class="my-icon">
+    <img class="personicon" src="assets/images/rounroun.png" />
+  </div>
+
+  <div class="s-menu">
+    <ul class="menu-list" *ngFor="let menu of menus" (click)="changeMenu(menu)">
+      <li class="s-item" [routerLink]="menu.route" routerLinkActive="active">
+        <mat-icon class="noteicon" [svgIcon]="menu.icon"></mat-icon>
+      </li>
+    </ul>
+  </div>
+</div>

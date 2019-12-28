@@ -1,0 +1,43 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
+
+  .note-add {
+    height: 280px;
+    width: 215px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0 20px;
+
+    .add-icon {
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  app-note-item {
+    height: 280px;
+    width: 215px;
+    background: #fff;
+    height: 280px;
+    width: 215px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 20px;
+  }
+
+
+}
+
+mat-paginator {
+  background: transparent;
+  position: fixed;
+  top: calc(100% - 80px);
+  right: 10px;
+
+}
